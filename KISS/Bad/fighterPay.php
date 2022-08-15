@@ -7,6 +7,7 @@ function payFighter(String $card, Fighter $fighter) {
     } else {
         if ($fighter->belt === true) {
             $PPV = true;
+            return $fighter->salary * $PPV;
         } else {
             return $fighter->salary;
         }
